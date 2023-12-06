@@ -8,7 +8,7 @@ const Header = () => {
 
     
 
-   <div className="button cursor-pointer " onClick={()=>{setIsActive(!isActive)}}>
+   <div className="button cursor-pointer hover:bg-[#4f64ee]" onClick={()=>{setIsActive(!isActive)}}>
 <div className= { `burger ${isActive ? 'burgerActive' : ''} `} ></div>
    </div>
   )
