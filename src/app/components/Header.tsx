@@ -8,8 +8,8 @@ const Header = () => {
 
     
 
-   <div className="button">
-    <div></div>
+   <div className="button cursor-pointer " onClick={()=>{setIsActive(!isActive)}}>
+<div className= { `burger ${isActive ? 'burgerActive' : ''} `} ></div>
    </div>
   )
 }
