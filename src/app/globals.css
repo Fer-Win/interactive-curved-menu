@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body::-webkit-scrollbar{
+  display: none;
+}
 
 .button{
   position: fixed;
@@ -29,7 +31,7 @@
   background-color: white;
   height: 2px;
   margin: auto;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.2s ease-in-out;
   position: relative;
   border-radius: 2px;
  
