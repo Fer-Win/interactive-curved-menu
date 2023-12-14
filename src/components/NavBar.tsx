@@ -37,12 +37,12 @@ const NavBar = () => {
         <div className='opacity-80'>Navigation
           <div className='h-[1px] bg-white w-[40%] mt-2'></div>
         </div>
-          <div className='flex flex-col gap-5 text-white text-3xl'>
+          <div className='flex flex-col gap-5 text-white max-h-[200px] text-3xl'>
            
             {
               navItems.map((item,index)=>{
-              return <motion.div custom={index} variants={slide} animate={slide.enter} exit={slide.exit} initial={slide.initial}>
-                <Link className='' href={item.href} key={index}>{item.title}</Link> 
+              return <motion.div key={index} custom={index} variants={slide} animate="enter" exit="exit" initial="initial">
+                <Link className='hover:text-4xl transition-all duration-100 ease-in-out' href={item.href} key={index}>{item.title} </Link> 
               </motion.div>
               })
             }
